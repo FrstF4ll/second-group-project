@@ -18,6 +18,11 @@ Workflow habituelle pour ajouter une note :
 - On rend compte de la note dans le tableau excel dédié
 - Suivi autonome individuel : Les apprentis prennent connaissances de leurs notes régulièrement pour savoir également eux ce qu'ils pourraient améliroer (soucis de transparence et de proactivité)
 
+## Essentiels 
+
+- Certains apprentis poursuivent une maturité intégrée, leurs note ECG ne sont donc pas calculée dans leurs moyenne CFC, les notes maturité sont traitées comme séparément.
+
 ## Secondaire et hors note école, optionnel
 
 - Les apprentis ont un dossier de formation à remplir avec les compétences acquises en entreprises ou à jobtrek, qu'ils doivent entretenir au cas ou quelque chose ne jouerait pas
+
