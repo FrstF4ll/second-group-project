@@ -28,6 +28,7 @@ Reference material for the stack decided in `spec.md` and `review.md`.
 
 - `pgvector` extension — https://github.com/pgvector/pgvector
 - LangChain.js pgvector integration — https://js.langchain.com/docs/integrations/vectorstores/pgvector/
+- embeddings — https://docs.langchain.com/oss/python/integrations/embeddings
 - Supabase's pgvector guide (if going managed instead of self-hosted) — https://supabase.com/docs/guides/ai/vector-columns
 - Indexing (IVFFlat / HNSW — relevant to the Risks table's indexing note in `spec.md`) — https://github.com/pgvector/pgvector#indexing
 
@@ -35,11 +36,11 @@ Reference material for the stack decided in `spec.md` and `review.md`.
 
 - Vercel AI SDK's `useChat` hook (streaming chat UI, works with any backend exposing a compatible endpoint — worth evaluating against hand-rolling the chat UI) — https://sdk.vercel.ai/docs/ai-sdk-ui/chatbot
 
-## Ingestion — crawling the deployed site (Decision #7)
+## Ingestion — reading the JT docs markdown source (Decision #7)
 
-- `cheerio` (HTML parsing/extraction in Node, referenced in `spec.md`'s tech stack table) — https://cheerio.js.org/
-- Sitemap protocol (what `crawler.ts` looks for first) — https://www.sitemaps.org/protocol.html
-- Quartz's sitemap plugin (confirms whether the target site emits one) — https://quartz.jzhao.xyz/plugins/Sitemap
+- `gray-matter` (frontmatter parsing in Node, referenced in `spec.md`'s tech stack table) — https://github.com/jonschlinkert/gray-matter
+- `remark` / `unified` (markdown AST parsing — used by `chunker.ts` to split on real heading boundaries rather than regex) — https://unifiedjs.com/
+- Quartz content structure (how the `content/` directory maps to pages, useful for confirming `loader.ts`'s path→URL derivation) — https://quartz.jzhao.xyz/authoring-content
 
 ## Out of scope / not used
 
