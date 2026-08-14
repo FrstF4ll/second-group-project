@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de notes — POC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <span class="brand-mark">G</span>
+            <div>
+                <div class="brand-name">Gestionnaire de notes</div>
+                <div class="brand-sub">Apprentis Jobtrek</div>
+            </div>
+        </div>
+        <div class="identity">
+            <label for="role-select">Rôle</label>
+            <select id="role-select">
+                <option value="apprentice">Apprenti</option>
+                <option value="coach">Coach</option>
+            </select>
+            <label for="identity-select">Identité</label>
+            <select id="identity-select"></select>
+        </div>
+    </header>
+
+    <div id="toast-container" aria-live="polite"></div>
+
+    <main id="app"></main>
+
+    <footer class="footer">
+        POC démo — données fictives stockées en <code>localStorage</code>.
+        Pondérations CFC : TPI 0.4 · base élargie 0.1 · informatique 0.3 (école pro 80% / CIE 20%) · culture générale 0.2.
+        Schéma maturité non défini (spec §Open Questions).
+        <button id="reset-btn" class="link-btn" type="button">Réinitialiser les données</button>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
